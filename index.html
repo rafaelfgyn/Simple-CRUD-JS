@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        display: flex;
+        justify-content: center;
+    }
+
+    #main {
+        width: 700px;
+        height: 500px;
+        border: solid 1px gray;
+        border-radius: 5px;
+        margin-top: 150px;
+    }
+
+    input, select {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    a {
+        cursor: pointer;
+        color: blue;
+    }
+
+    table tr th, td {
+        padding: 0 5px;
+        border-right: 1px solid gray;
+    }
+
+</style>
+<body>
+    <div id="main">
+        <h1>Formulário</h1>
+        <form onsubmit="event.preventDefault();onFormSubmit(); reset()">
+            <label>Nome</label>
+            <input type="text" name="nome" id="nome">
+
+            <label>E-mail</label>
+            <input type="text" name="email" id="email">
+
+            <label>Salário</label>
+            <input type="text" name="salario" id="salario">
+
+            <button>Submit</button>
+        </form>
+        <hr>
+        <div>
+            <table id="tabela">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>E-mail</th>
+                        <th>Salário</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+    
+</body>
+
+<script src="./index.js">    
+</script>
+</html>
